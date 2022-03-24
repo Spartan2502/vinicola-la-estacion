@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/panel.css">
+    <title>La Estación</title>
+</head>
+
+<body>
+    <header>
+        <p class="brand-name">La Estación</p>
+        <nav>
+            <a href="./products.html" onclick="return guardarCarros()">Mis pedidos</a>
+        </nav>
+        <nav>
+            <div class="dropdown">
+                <a href="#"><img src="./img/icons/profile-user.png" width="30px" alt=""></a>
+                <div class="dropdown-content">
+                    <a href="./index.html" onclick=" return guardarCarros()" id="close">Cerrar sesión</a>
+                </div>
+            </div>
+            <a id="xyz" href="./cart.html">
+                <img src="./img/icons/shopping-cart.png" width="30px" alt="">
+                <!-- <span class="span"> 0 </span> -->
+            </a>
+        </nav>
+    </header>
+
+    <!-- pedidos -->
+    <div style="margin: 20px;" class="box-panel">
+        <table id="sales">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Producto</th>
+                    <th>Fecha</th>
+                    <th>Precio / U</th>
+                </tr>
+            </thead>
+            <tbody class="show">
+
+            </tbody>
+        </table>
+    </div>
+    <!-- pedidos -->
+
+    <!-- scripts -->
+    <script src="./js/orders.js"></script>
+</body>
+
+</html>

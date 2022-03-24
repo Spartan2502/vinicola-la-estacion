@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/panel.css">
+    <title>La Estación</title>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html">
+            <p class="brand-name">La Estación</p>
+        </a>
+        <nav>
+            <a href="#">Administrador</a>
+        </nav>
+        <nav>
+            <div class="dropdown">
+                <a href="#"><img src="./img/icons/profile-user.png" width="30px" alt=""></a>
+                <div class="dropdown-content">
+                    <a href="./index.html" id="close">Cerrar sesión</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- panel  -->
+
+    <div class="formRegistro" id="formulario">
+        <form class="xnxx" action="javascript:void(0);"  >
+            <button class="quitarFormulario" onclick="quitarFormulario()">&times;</button>
+            <div class="form-group">
+                <p>Nombre del Producto</p>
+                <input class="form-control" type="text" id="nombre" style="border-color: mediumpurple;">
+            </div>
+            <div class="form-group">
+                <p>Stock</p>
+                <input class="form-control" type="number" id="stock" style="border-color: mediumpurple;">
+            </div>
+            <div class="form-group">
+                <p>Detalle</p>
+                <input class="form-control" type="text" id="detalle" style="border-color: mediumpurple;">
+            </div>
+            <div class="form-group">
+                <p>Precio</p>
+                <input class="form-control" type="number" id="precio" style="border-color: mediumpurple;">
+            </div>
+                <div class="form-group">
+                    <p>Imagen del producto</p>
+                    <input class="form-control" type="file" name="archivosubido" id="imagen" onchange="obtImg()"
+                        style="border-color: mediumpurple;">
+                </div>
+                <br>
+                <button class="add-to-cart" type="submit" onclick="agregarProducto()"><b>Registrar</b></button>
+        </form>
+    </div>
+
+    <div class="content" id="content">
+        <h2>Panel de administración</h2>
+        <div class="stats-container">
+            <div class="stats-card">
+                <h2 class="white-text">Productos registrados:</h2>
+                <h2 id="total1" class="white-text">...</h2>
+            </div>
+            <div class="stats-card">
+                <h2 class="white-text">Usuarios registrados:</h2>
+                <h2 id="total2"  class="white-text">...</h2>
+            </div>
+            <div class="stats-card">
+                <h2 class="white-text">Pedidos totales:</h2>
+                <h2 id="total3" class="white-text">...</h2>
+            </div>
+            <div class="stats-card">
+                <h2 class="white-text">Total de ventas:</h2>
+                <h2 id="total4" class="white-text">...</h2>
+            </div>
+        </div>
+        <div class="search">
+            <input onkeyup="search_animal()" id="searchbar" class="input-search" type="text" placeholder="Escribe para buscar">
+            <button onclick="search_animal()" type="button" class="btn-search">Buscar</button>
+        </div>
+        <div id="box">
+            <!-- cards  -->
+            <div class="box-top">
+                <p>Productos</p>
+                <button class="button-add" onclick="mostrarFormulario()"><b>Agregar Producto</b></button>
+            </div>
+
+            <div class="box-panel" id="products">
+                <!-- cards -->
+            </div>
+        </div>
+        <!-- cards -->
+        <!-- users -->
+        <div id="box">
+            <div class="box-top">
+                <p>Usuarios</p>
+                <button class="button-add" onclick="mostrarFormularioUsuario()"><b>Agregar usuario</b></button>
+            </div>
+            <div class="box-panel">
+                <div style="overflow-x:auto;">
+                <table id="users">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Telefono</th>
+                            <th>Correo</th>
+                            <th>Contraseña</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="usersIn">
+
+                    </tbody>
+                </table>
+            </div>
+            </div>
+        </div>
+        <!-- users -->
+        <!-- sales -->
+        <div id="box mbottom">
+            <div class="box-top">
+                <p class="text-color">Pedidos</p>
+            </div>
+            <div class="box-panel">
+                <div style="overflow-x:auto;">
+                <table id="sales">
+                    <thead>
+                        <tr>
+                            <th>Usuario</th>
+                            <th>Compra</th>
+                            <th>Fecha</th>
+                            <th>Total</th>
+                            <th>status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="salesIn">
+
+                    </tbody>
+                </table>
+            </div>
+            </div>
+        </div>
+        <!-- sales -->
+
+    </div>
+    
+    <!-- panel -->
+
+
+    <script src="js/panel.js"></script>
+    <script src="js/search.js"></script>
+</body>
+
+</html>

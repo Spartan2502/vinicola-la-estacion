@@ -1,0 +1,25 @@
+body {
+    padding: 0;
+}
+.span {
+    padding: 5px;
+    background-color: #1abc9c;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    color: white;
+  }
+  @media screen and (max-width: 415px) {
+      .card {
+          width: 130px;
+      }
+      .cards {
+        max-width            : 100%;
+        width: auto;
+        padding: 0;
+        margin               : 50px auto;
+        display              : grid;
+        grid-gap             : 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    }
+  }

@@ -1,0 +1,45 @@
+body {
+    padding: 5px;
+}
+@media screen and (max-width: 950px) {
+    h1 {
+        font-size: 3rem;
+        margin-top: 10%;
+    }
+}
+@media screen and (max-width: 850px) {
+    h1 {
+        font-size: 3rem;
+        margin-top: 30%;
+        text-align: center;
+    }
+    .home-text {
+        text-align: center;
+    }
+    .hero {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 690px) {
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .hero {
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    .hero-img {
+        margin-top: 10%;
+    }
+    body {
+        padding-bottom: 200px;
+    }
+    .brand-name {
+        display: none;
+    }
+    header {
+        padding: 0;
+        justify-content: space-evenly;
+    }
+}

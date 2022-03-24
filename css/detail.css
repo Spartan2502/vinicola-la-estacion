@@ -1,0 +1,106 @@
+.fondo {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+}
+.barra {
+    width: 30%;
+    height: 100vh;
+    margin-left: 60%;
+    background-color: #fff;
+}
+.products {
+    position: relative;
+    z-index: -1;
+}
+.info-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    margin-top: 100px;
+}
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.text-container {
+    width: 500px;
+}
+.color-text {
+    font-size: 3.7em;
+    margin: 0;
+}
+p {
+    font-weight: 600;
+}
+.price-text {
+    font-size: 2em;
+}
+.add-to-cart {
+    background-color: var(--main-bg-color);
+    padding         : 10px 30px;
+    border          : none;
+    border-radius   : 50px;
+    text-decoration : none;
+    color           : #fff;
+    box-shadow   : rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.add-to-cart2 {
+    background-color: gray;
+    padding         : 10px 15px;
+    border          : none;
+    border-radius   : 50px;
+    text-decoration : none;
+    color           : #fff;
+    box-shadow   : rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* margin-top: 10px; */
+    margin-left: 15px; 
+}
+.imagensita {
+    border-radius: 15px;
+    box-shadow   : rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.wrapper {
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow   : rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+@media screen and (max-width: 900px) {
+    .info-container {
+        flex-direction: column-reverse;
+    }
+    h2 {
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+    .button-wrapper {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .color-text {
+        font-size: 2em;
+        margin-top: 30px;
+    }
+    .imagensita {
+        width: 200px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .text-container {
+        width: 90%;
+    }
+}

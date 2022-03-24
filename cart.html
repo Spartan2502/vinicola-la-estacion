@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/cart_style.css">
+    <title>La Estación</title>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html"><img src="img/La estacion.png" alt="" class="EstImg"></a>
+        <nav>
+            <a href="./products.html" onclick="return guardarCarros()">Productos</a>
+        </nav>
+        <nav>
+            <div class="dropdown">
+                <a href="#"><img src="./img/icons/profile-user.png" width="30px" alt=""></a>
+                <div class="dropdown-content">
+                    <a href="./index.html" onclick="return guardarCarros()" id="close">Cerrar sesión</a>
+                </div>
+            </div>
+            <a id="xyz" href="./orders.html">
+                <img src="./img/icons/orders.jpg" width="25px" alt="">
+            </a>
+        </nav>
+    </header>
+
+    <!-- cart  -->
+    <div class="content">
+        <h2 id="carttitle">Carrito de Compras</h2>
+        <!-- products -->
+        <div id="box">
+            <div class="box-panel">
+                <table id="sales" class="res">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <!-- <th>Detalle</th> -->
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th></th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="salesIn" class="shopping">
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <h4>Total: </h4>
+                            </td>
+                            <td id="total"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+            </div>
+
+            <!-- products -->
+            <!-- totals -->
+            <!-- <div class="total">
+                <div class="totals-item totals-item-total">
+                    <label>Total</label>
+                    <h2 class="totals-value" id="total">90.57</h2>
+                </div>
+            </div> -->
+
+            <button class="checkout" id="check">Finalizar y pagar</button>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!-- cart -->
+
+
+    <script src="js/cart.js"></script>
+    <!-- <script src="./js/productos.js"></script> -->
+</body>
+
+</html>

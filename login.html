@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Omar Rodriguez de Luna">
+    <title>La Estación</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+            <a href="./index.html"><img src="img/La estacion.png" alt="" class="EstImg"></a>
+            
+        <nav>
+            <a href="./index.html">Inicio</a>
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./contacto.html">Contáctanos</a>
+        </nav>
+        <nav>
+            <div class="dropdown">
+                <a href="#"><img src="./img/icons/profile-user.png" width="30px" alt=""></a>
+                <div class="dropdown-content">
+                    <!-- <a href="./login.html">Iniciar sesión</a> -->
+                    <a href="./registro.html">Registrarse</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-xs-12"></div>
+            <div class="col-lg-4 col-xs-12">
+                <form class="form-signin" action="javascript:void(0)">
+                    <h2 class="form-signin-heading text-center my-2">Ingresa tus datos</h2>
+                    <label for="inputEmail" class="sr-only">Correo electrónico</label>
+                    <input type="email" id="inputEmail" class="form-control my-3" placeholder="Correo electrónico" required autofocus>
+                    <label for="inputPassword" class="sr-only">Contraseña</label>
+                    <input type="password" id="inputPassword" class="form-control my-3" placeholder="Contraseña" required>
+                    <!-- <div class="checkbox">
+                        <label>
+                            <input class="my-3" type="checkbox" value="remember-me"> Recordarme
+                        </label>
+                    </div> -->
+                    <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="login()">Iniciar sesión</button>
+                    <button type="button" class="ddd btn btn-lg btn-secondary btn-block" onclick="redirect()">Registrarse</a>
+                </form>
+            </div>
+            <div class="col-lg-4 col-xs-12"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/registro.js"></script>
+    <script src="./js/navbar.js"></script>
+</body>
+
+</html>

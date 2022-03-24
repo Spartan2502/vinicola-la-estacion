@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="icon" href="img/La estacion.jpg" type="image/ico">
+  <title>La Estación</title>
+</head>
+
+<body style="padding-bottom: 30px;">
+  <header>
+    <a href="./index.html"><img src="img/La estacion.png" alt="" class="EstImg"></a>
+    <nav>
+      <a href="./index.html">Inicio</a>
+      <a href="./nosotros.html">Nosotros</a>
+      <a href="./contacto.html">Contáctanos</a>
+    </nav>
+    <nav>
+      <div class="dropdown">
+        <a href="#"><img src="./img/icons/profile-user.png" width="30px" alt=""></a>
+        <div class="dropdown-content">
+          <a href="./login.html">Iniciar sesión</a>
+          <!-- <a href="./registro.html">Registrarse</a> -->
+        </div>
+      </div>
+      <!-- <a href=""><img src="./img/icons/shopping-cart.png" width="30px" alt=""></a> -->
+    </nav>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-xs-12"></div>
+      <div class="col-lg-4 col-xs-12">
+        <form id="form" action="javascript:void(0)">
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Contraseña</label>
+            <input type="password" class="form-control" id="password" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Validar contraseña</label>
+            <input type="password" class="form-control" id="password2">
+          </div>
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" class="form-control" id="name">
+          </div>
+          <div class="form-group">
+            <label for="lastName">Apellidos</label>
+            <input type="text" class="form-control" id="lastName">
+          </div>
+          <div class="form-group">
+            <label for="tel">Teléfono</label>
+            <input type="number" class="form-control" id="tel">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="radio">
+            <label class="form-check-label" for="exampleCheck1"> Aceptar términos y condiciones</label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg btn-block" onclick="registrarse()">Registrarme</button>
+        </form>
+      </div>
+      <div class="col-lg-4 col-xs-12"></div>
+    </div>
+  </div>
+
+  <button type="button" style="margin-left: auto; margin-right: auto;display: block; margin-top: 30px;"
+    class="btn btn-dark" onclick="location.href='./login.html '">Regresar</button>
+
+  <script src="./js/registro.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/navbar.js"></script>
+</body>
+
+</html>

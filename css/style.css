@@ -1,0 +1,108 @@
+:root {
+    --main-bg-color: #802bd6;
+    --text-color: #0a0a0a;
+    --main2-bg-color: rgba(37, 214, 161, 0.89);
+}
+body {
+    background-color: var(--main-bg-color);
+    color: white;
+}
+form {
+    background-color: #290628;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 10vh;
+    width: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+form > button {
+    background-color: var(--main-bg-color);
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 10px;
+    font-style: bold;
+}
+form > input {
+    height: 30px;
+}
+form > input, form > label {
+    margin-top: 10px;
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+.formRegistro{
+    width: 700px;
+    display: none;
+    padding: auto;
+    opacity: 100%;
+
+}
+.form-control{
+    height: 30px;
+    color: black
+}
+.z-index{
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+/*home.html*/
+.card {
+    background-color: rgb(166, 92, 209);
+    margin-left: auto;
+    margin-right: auto;
+    padding      : 10px;
+    width: 40%;
+    height       : 40%;
+    border-radius: 20px;
+    text-align   : center;
+    box-shadow: rgba(0, 0, 0, 0.35) 20px 20px 20px 20px;
+}
+.card-body{
+    color: #fff;
+    text-align: center;
+}
+.card-body img{
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+button{
+    background-color: var(--main2-bg-color);
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 10px;
+    font-style: bold;
+}
+#correccion p{
+
+    border-style: solid;
+    border-color: firebrick;
+    background-color:gray;
+    color: #fff;
+}
+#bodyHome{
+    color: #000;
+    background-image: url(../img/home2.jpg);
+    
+}

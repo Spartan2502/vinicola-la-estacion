@@ -1,0 +1,96 @@
+#box {
+    font-size: 25px;
+}
+
+#imgcart{
+    width: 150px;
+}
+td {
+    text-align    : center;
+}
+
+.total {
+    color    : white;
+    font-size: 30px;
+    right    : 0;
+
+}
+
+.total .totals-item label {
+    float     : left;
+    width     : 79%;
+    text-align: right;
+
+}
+
+.total .totals-item .totals-value {
+    float     : right;
+    width     : 21%;
+    text-align: right;
+}
+
+.checkout {
+    float           : right;
+    border          : 0;
+    margin      : 20px;
+    padding         : 6px 25px;
+    background-color: #1abc9c;
+    color           : #fff;
+    font-size       : 25px;
+    border-radius   : 5px;
+
+}
+
+.checkout:hover {
+    background-color: #2052D5;
+}
+
+.clearfix {
+    clear: both;
+}
+/* new styles */
+body {
+    background-color: #fff;
+}
+table {
+    font-size: initial;
+}
+td {
+    border: 0px solid white;
+}
+th {
+    text-align: center;
+}
+#imgcart{
+    width: 120px;
+}
+.mlandr {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.box-panel {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.cart-button {
+    padding         : 8px 18px;
+    background-color: #2052D5;
+    border          : none;
+    border-radius   : 5px;
+    color           : white;
+}
+.cart-button:hover {
+    opacity: 0.7;
+}
+.del-button {
+    background-color: #1abc9c;
+}
+table th:first-child{
+    border-radius: 10px 0 0 10px;
+  }
+  
+table th:last-child{
+    border-radius:0 10px 10px 0;
+}
+body {
+    padding: 0;
+}

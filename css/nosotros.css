@@ -1,0 +1,260 @@
+
+header {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    /* background-color: var(--main-bg-color); */
+    font-weight     : bold;
+    padding-left    : 50px;
+    padding-right   : 50px;
+    color           : var(--text-color);
+}
+
+.brand-name {
+    transition: 0.4s color;
+}
+
+.brand-name:hover {
+    color : #fff;
+    cursor: pointer;
+}
+
+nav>a:hover {
+    color: #fff;
+}
+
+nav {
+    display        : flex;
+    justify-content: space-around;
+    align-items    : center;
+}
+nav>a {
+    margin-left    : 20px;
+    color          : var(--text-color);
+    text-decoration: none;
+    transition     : 0.4s color;
+}
+
+ul>li {
+    text-decoration: none;
+}
+
+body {
+    background: rgb(210,133,167);
+    background: radial-gradient(circle, rgba(210,133,167,1) 0%, rgba(119,171,233,1) 100%);
+    color: #000;
+}
+footer{
+  
+    bottom: 0%;
+    
+
+}
+.img img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+.img>.img-thumbnail{
+width: 100%;
+height: 75%;
+}
+.texto{
+    text-align: justify;
+    padding: 10px;
+    font-weight: bold;
+}
+.contTexto{
+    border-radius: 15px;
+    border-style: solid;
+    border-color: var(--text-color);
+    height: 75%;
+    font-weight: bold;
+}
+.contTexto2{
+    border-radius: 15px;
+    border-style: solid;
+    border-color: var(--text-color); 
+    font-weight: bold;
+}
+.contTexto2 img{
+  display: block;
+  width: 100%;
+}
+
+ #h3{
+    color: var(--text-color);
+    font-family: cursive;
+}
+.imgNosotros{
+    height: 0%;
+}
+
+.card{
+    border-radius: 15px;
+
+}
+/* Dropdown */
+:root {
+    --main-bg-color: rgba(205,4,254,0.7791491596638656);
+    --text-color   : #0a0a0a;
+}
+.dropdown {
+    position: relative;
+    display : inline-block;
+}
+
+.dropdown-content {
+    text-align      : center;
+    display         : none;
+    position        : absolute;
+    background-color: #000;
+    min-width       : 125px;
+    box-shadow      : 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index         : 1;
+    border-radius   : 15px;
+}
+
+.dropdown-content a {
+    color          : #fff;
+    padding        : 12px 10px;
+    text-decoration: none;
+    display        : block;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--main-bg-color);
+    border-radius   : 15px;
+}
+
+.dropdown:hover .dropdown-content {
+    display      : block;
+    border-radius: 15px;
+    right: 1px;
+  }
+  .dropdown:hover .dropbtn {
+    background-color: var(--main-bg-color);
+    border-radius   : 15px;
+}
+/*footer*/
+.social-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -10px;
+  }
+  .social-buttons__button {
+    margin: 10px 5px 0;
+  }
+  
+  .social-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+  }
+  .social-button__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    border-radius: 100%;
+    background: #fff;
+    text-align: center;
+  }
+  .social-button i,
+  .social-button svg {
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
+  }
+  .social-button i {
+    font-size: 28px;
+  }
+  .social-button svg {
+    height: 40%;
+    width: 40%;
+  }
+  .social-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    transition: 0.3s;
+  }
+  .social-button:focus, .social-button:hover {
+    color: #fff!important;
+  }
+  .social-button:focus::after, .social-button:hover::after {
+    width: 100%;
+    height: 100%;
+    margin-left: -50%;
+  }
+  
+  .social-button--facebook {
+    color: #3b5998 !important;
+  }
+  .social-button--facebook::after {
+    background: #3b5998;
+  }
+  .social-button--twitter {
+    color: #1da1f2 !important;
+  }
+  .social-button--twitter::after {
+    background: #1da1f2;
+  }
+  .social-button--pinterest{
+   color: #bd081c !important;
+  }
+  .social-button--pinterest::after {
+    background: #bd081c;
+  }
+  .social-button--youtube {
+   color: #ff0000 !important;
+  }
+  .social-button--youtube::after {
+    background: #ff0000;
+  }
+  .social-button--instagram {
+   color: #c13584 !important;
+  }
+  .social-button--instagram::after {
+    background: #c13584;
+  }
+body {
+  padding: 0;
+}
+.EstImg {
+  width: 40px;
+}
+body {
+  padding-top: 5px;
+}
+@media screen and (max-width: 480px) {
+  .brand-name {
+      display: none;
+  }
+  .EstImg {
+      display: none;
+  }
+}
+h1 {
+  margin-left: auto;
+  margin-right: auto;
+}
