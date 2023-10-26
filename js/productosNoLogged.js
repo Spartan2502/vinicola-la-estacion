@@ -14,51 +14,14 @@ function mostrarDatos() {
         <img class="card-img" src="${info.image}" onClick="see(${info.id})" alt="" >
         <p>${info.name}</p>
         <p>$${info.price}</p>
-        <button class="add-to-cart" id="buy" onClick="buy(${info.id}) " >Agregar al carrito</button>
     </div>`
     })
 }
 
 window.addEventListener('load', () => {
 
-    var userL = JSON.parse(localStorage.getItem('carrosGuardados'))
-    var usuarioA = JSON.parse(sessionStorage.getItem('logged'))
+    mostrarDatos();
 
-    let encontrado = userL.find(x => x.comprador == usuarioA);
-    let indice = userL.indexOf(encontrado);
-
-    if (encontrado) {
-        localStorage.setItem('carrito', JSON.stringify(userL[indice].productos))
-        console.log(userL)
-    } else {
-        console.log("no se encontró");
-    }
-
-
-    if (localStorage.getItem('carrito') == null) {
-        localStorage.setItem('carrito', '[]')
-        console.log('No existe')
-    }
-
-
-    let productosLS = JSON.parse(localStorage.getItem('products'))
-    let carritoLS = JSON.parse(localStorage.getItem('carrito'));
-    user.innerHTML = UsName()
-
-    if (productosLS == null) {
-        alert('No hay productos que mostrar')
-    }
-    else {
-        mostrarDatos();
-    }
-
-    if (carritoLS == null) {
-        carrito = [];
-    }
-    document.getElementById("xyz").innerHTML = `
-        <img src="./img/icons/shopping-cart.png" width="30px" alt="">
-                <span class="span"> ${JSON.parse(localStorage.getItem("carrito")).length} </span>
-        `;
 })
 
 // prueba compra carrito
@@ -124,5 +87,5 @@ function UsName() {
 }
 function see(id) {
     localStorage.setItem('detail', JSON.stringify(id))
-    location.href = '../detail.html'
+    location.href = '../detailNoLogged.html'
 }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/bar.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/products.css">
+    <title>La Estación</title>
+</head>
+
+<body>
+    <header>
+        <p class="brand-name">La Estación</p>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a class="" href="contacto.html">Contáctanos</a>
+            <a href="./productsNologged.html">Productos</a>
+        </nav>
+        <nav>
+
+            <div class="dropdown">
+                <a href="#"><img src="./img/icons/profile-user.png" width="30px" alt=""></a>
+                <div class="dropdown-content">
+                    <a href="./login.html" id="close">Iniciar Sesion</a>
+                    <a href="./registro.html" id="close">Registrate</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="search">
+        <input onkeyup="search_animal()" id="searchbar" class="input-search" type="text"
+            placeholder="Escribe para buscar">
+        <button onclick="search_animal()" type="button" class="btn-search">Buscar</button>
+    </div>
+    <div class="main-container">
+        <div class="bar">
+            <h4>Categorías</h4>
+            <hr>
+            <a href="#" class="filter" onclick="return searchVinos()">Vinos</a>
+            <hr>
+            <a href="#" class="filter" onclick="return searchLicores()">Licores</a>
+            <hr>
+            <a href="#" class="filter" onclick="return searchWhisky()">Whisky</a>
+            <hr>
+            <a href="#" class="filter" onclick="return searchGinebras()">Ginebra</a>
+            <hr>
+            <a href="#" class="filter" onclick="return searchTequilas()">Tequila</a>
+            <button onclick="searchAll()" class="btn-search">Ver todo</button>
+        </div>
+        <div class="hidden"></div>
+        <div class="cards">
+            <!-- cards -->
+        </div>
+    </div>
+
+    <script src="js/productosNoLogged.js"></script>
+    <script src="./js/search.js"></script>
+</body>
+
+</html>

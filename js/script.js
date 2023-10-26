@@ -5,13 +5,21 @@ let administrador = {
     lastName: "Gomez",
     phone: 4656384488
 };
+let usuario = {
+    email: "correo@correo.com",
+    password: btoa("correo123"),
+    name: "username",
+    lastName: "lastname",
+    phone: "123456789"
+}
 let email = document.querySelector("#inputEmail");
 let password = document.querySelector("#inputPassword");
 
 const validarUsuario = () => {
     if (!localStorage.getItem("usuarios")) {
         console.log("Sin valores previos en primera carga, agregando admin...");
-        localStorage.setItem("usuarios", `[${JSON.stringify(administrador)}]`);
+        localStorage.setItem("usuarios", `[${JSON.stringify(administrador,usuario)}]`);
+
     }
 }
 window.addEventListener('DOMContentLoaded', validarUsuario());
